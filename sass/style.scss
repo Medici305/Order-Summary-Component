@@ -1,0 +1,82 @@
+// Imports
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+@import "./components/variables";
+@import "./components/reboots";
+@import "./components/responsivness";
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: {
+    family: "red hat display";
+    size: 16px;
+  }
+}
+
+p {
+  color: $Desaturated-blue;
+  font-size: 1.1rem;
+  word-spacing: 0.1rem;
+}
+
+a {
+  font-weight: 500;
+  &:hover {
+    text-decoration: none !important;
+    color: $Desaturated-blue !important;
+  }
+}
+
+button {
+  font-weight: 500 !important;
+  border-radius: 0.75rem !important;
+}
+
+.background {
+  min-height: 100vh;
+  background: url(../images/pattern-background-desktop.svg) no-repeat top;
+  background-size: contain;
+  background-color: $Pale-blue;
+  .box {
+    border-radius: 1.5rem;
+    // 1.1 Banner
+    .banner {
+      min-height: 30vh;
+      border-top-right-radius: 1.5rem;
+      border-top-left-radius: 1.5rem;
+      object-fit: cover;
+      background: url(../images/illustration-hero.svg) no-repeat center;
+      background-size: cover;
+    }
+    .subscription {
+      background-color: $Very-pale-blue;
+      text-align: left;
+      border-radius: 0.75rem;
+      h4 {
+        font-weight: bold;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+    .pay {
+      background-color: $Bright-blue;
+
+      &:hover {
+        background-color: rgb(32, 161, 221);
+        border-color: rgb(32, 161, 221);
+      }
+    }
+    .cancel {
+      color: $Desaturated-blue;
+      &:hover {
+        color: black;
+      }
+    }
+  }
+}

@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+/* Primary */
+/* Neutral */
+h1 {
+  font-weight: 700 !important;
+}
+
+@media screen and (max-width: 578px) {
+  .background {
+    background: url(../../images/pattern-background-mobile.svg) no-repeat top;
+  }
+}
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "red hat display";
+  font-size: 16px;
+}
+
+p {
+  color: #7280a7;
+  font-size: 1.1rem;
+  word-spacing: 0.1rem;
+}
+
+a {
+  font-weight: 500;
+}
+a:hover {
+  text-decoration: none !important;
+  color: #7280a7 !important;
+}
+
+button {
+  font-weight: 500 !important;
+  border-radius: 0.75rem !important;
+}
+
+.background {
+  min-height: 100vh;
+  background: url(../images/pattern-background-desktop.svg) no-repeat top;
+  background-size: contain;
+  background-color: #e0e8ff;
+}
+.background .box {
+  border-radius: 1.5rem;
+}
+.background .box .banner {
+  min-height: 30vh;
+  border-top-right-radius: 1.5rem;
+  border-top-left-radius: 1.5rem;
+  object-fit: cover;
+  background: url(../images/illustration-hero.svg) no-repeat center;
+  background-size: cover;
+}
+.background .box .subscription {
+  background-color: #f5f7ff;
+  text-align: left;
+  border-radius: 0.75rem;
+}
+.background .box .subscription h4 {
+  font-weight: bold;
+}
+.background .box .subscription p {
+  font-size: 1rem;
+}
+.background .box .pay {
+  background-color: #3829e0;
+}
+.background .box .pay:hover {
+  background-color: #20a1dd;
+  border-color: #20a1dd;
+}
+.background .box .cancel {
+  color: #7280a7;
+}
+.background .box .cancel:hover {
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */
